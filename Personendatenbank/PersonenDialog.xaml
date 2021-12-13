@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Personendatenbank"
         mc:Ignorable="d"
         Title="Neue Person" 
-        Height="275" Width="285" ResizeMode="NoResize" 
+        Height="288" Width="285" ResizeMode="NoResize" 
         WindowStartupLocation="CenterScreen" Topmost="True"
         FontSize="14.0">
 

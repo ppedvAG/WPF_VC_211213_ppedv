@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_Controls", "Controls\M0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{4051E549-6A94-451C-B20D-89C92BB1989F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Container", "Container\Container.csproj", "{8F7660CE-4F9B-46FC-ADEE-D3414504A875}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Container", "Container\M03_Container.csproj", "{8F7660CE-4F9B-46FC-ADEE-D3414504A875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{9392D24F-D88F-4610-8674-B69CFB1D6482}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8F7660CE-4F9B-46FC-ADEE-D3414504A875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F7660CE-4F9B-46FC-ADEE-D3414504A875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F7660CE-4F9B-46FC-ADEE-D3414504A875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9392D24F-D88F-4610-8674-B69CFB1D6482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9392D24F-D88F-4610-8674-B69CFB1D6482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9392D24F-D88F-4610-8674-B69CFB1D6482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9392D24F-D88F-4610-8674-B69CFB1D6482}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
