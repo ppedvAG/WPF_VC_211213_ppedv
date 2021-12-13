@@ -24,6 +24,7 @@ namespace Container
         {
             InitializeComponent();
 
+            //Codeseitiger Schreib-Zugriff auf eine Attached-Property des Canvas
             Canvas.SetLeft(Rct_Blue, 200);
         }
     }
