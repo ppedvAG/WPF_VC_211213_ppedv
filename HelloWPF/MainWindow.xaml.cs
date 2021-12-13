@@ -26,5 +26,10 @@ namespace HelloWPF
 
            
         }
+
+        private void Btn_Beispiel_Click(object sender, RoutedEventArgs e)
+        {
+            Btn_Beispiel.Content = "Ich wurde geklickt";
+        }
     }
 }

@@ -5,9 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelloWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="362" Width="445">
     <StackPanel>
-        <Button x:Name="Btn_Beispiel"/>
+        <Button x:Name="Btn_Beispiel"
+                Content="Ich bin ein Button"
+                Background="HotPink"
+                Margin="10, 20, 5, 1"
+                HorizontalAlignment="Left"
+                Width="150"
+                Click="Btn_Beispiel_Click"/>
+
+        <Button>
+            <Button.Content>
+                <TextBox Width="50"/>
+            </Button.Content>
+            
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="LightBlue" Offset="0"/>
+                    <GradientStop Color="DarkBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button>
+            Hallo
+        </Button>
 
     </StackPanel>
 </Window>
