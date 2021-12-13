@@ -23,31 +23,66 @@ namespace Controls
         public MainWindow()
         {
             InitializeComponent();
+
+            //Zuweisung eines weiteren EventHandlers zu dem Click-Event des Buttons
+            Btn_KlickMich.Click += Btn_KlickMich_Click_2;
         }
 
+        //Event-Handler für das Click-Event des Buttons
         private void Btn_KlickMich_Click(object sender, RoutedEventArgs e)
         {
+            //Neuzuweisung der Content-Eigenschaft des Labels mit dem ausgewählten Inhalt der ComboBox
             Lbl_Output.Content = (Cbb_Auswahl.SelectedItem as ComboBoxItem)?.Content;
 
-            Tbl_String.Text = Sdr_Wert.Value.ToString();
+            //Änderung der Hintergrundfarbe des Fensters
+            Wnd_Main.Background = new SolidColorBrush(Colors.Blue);
+
+            //MessageBox mit dem Inhalt der TextBox
+            MessageBox.Show(Tbx_Input.Text);
+
+            //Prüfung, ob die Checkbox abgehakt ist
+            if (Cbx_Haken.IsChecked == true)
+                //Anzeige einer MessageBox mit Inhalt der TextBox und Auswahl der ComboBox
+                MessageBox.Show(Tbx_Input.Text + "\n" + Cbb_Auswahl.Text);
         }
 
-        private void Beenden_Click(object sender, RoutedEventArgs e)
+        //Zweiter Eventhandeler des Buttons (siehe Konstruktor)
+        private void Btn_KlickMich_Click_2(object sender, RoutedEventArgs e)
         {
-            if(MessageBox.Show("Möchtest du wirklich beenden?", "Beenden", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
-                this.Close();
-
-            //Application.Current.Shutdown();
+            //MessageBox-Abfrage mit Überprüfung des geklickten Buttons
+            switch (MessageBox.Show("JA oder NEIN?", "Meine Frage an dich", MessageBoxButton.YesNoCancel, MessageBoxImage.Question, MessageBoxResult.No, MessageBoxOptions.RightAlign))
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("YES");
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("No");
+                    break;
+            }
         }
 
-        private void Neu_Click(object sender, RoutedEventArgs e)
+        private void OpenWindow(object sender, RoutedEventArgs e)
         {
-            new MainWindow().Show();
+            //Öffen eines neuen Fensters als gleichberechtigtes Fenster
+            new MainWindow() { Title = "Neues Fenster" }.Show();
         }
 
-        private void Dialog_Click(object sender, RoutedEventArgs e)
+        private void OpenDialogWindow(object sender, RoutedEventArgs e)
         {
-            new MainWindow().ShowDialog();
+
+            //Öffnen eines neuen Fensters als Dialogfenster mit Rückgabe des DialogResults
+            bool? dialogresult = new MainWindow() { Title = "Neues Dialogfenster" }.ShowDialog();
+            MessageBox.Show(dialogresult.ToString());
+        }
+
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            //Schließen des Fensters
+            this.Close();
+
+            //Beenden der Applikation
+            Application.Current.Shutdown();
         }
     }
 }
+

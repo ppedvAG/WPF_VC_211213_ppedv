@@ -1,40 +1,60 @@
-﻿<Window x:Class="Controls.MainWindow"
+﻿<!--vgl. CodeBehind-->
+<Window x:Class="Controls.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Controls"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="707" Width="417">
+        mc:Ignorable="d" Height="805" Width="430"
+        x:Name="Wnd_Main" WindowStartupLocation="CenterScreen">
     <StackPanel>
 
+        <!--Labels besitzen, wie die meisten Controls und alle Container eine Content-Eigenschaft, welche
+        mit weiteren Containern/Controls befüllt werden können (Auch hier darf nur ein Root-Element vohanden sein).-->
         <Label x:Name="Lbl_Output"
                Content="Hallo, ich bin ein String"
                Foreground="Red"
-               HorizontalAlignment="Center"
                FontSize="25"
+               HorizontalAlignment="Center"
                BorderBrush="Black"
                BorderThickness="1"/>
 
-        <TextBlock x:Name="Tbl_String"
+        <!--TextBlöcke sind Labels, welche auf Strings spezialisiert sind. Sie besitzen statt der
+            Content- die Text-Property-->
+        <TextBlock x:Name="Tbl_Strings"
                    Text="Ich bin auch ein String"
                    FontFamily="Comic Sans MS"/>
 
+        <!--Buttons können von den Usern angeklickt werden, wodurch das Click-Event ausgelöst wird (vgl. CB)-->
         <Button x:Name="Btn_KlickMich"
-                Content="Klick Mich"
+                Content="Klick mich"
                 Click="Btn_KlickMich_Click"/>
 
+        <!--Mittels des Image-Objekts können Grafiken angezeigt und formatiert werden-->
         <Image Source="Images/ppedv.bmp"
-               Height="60"
-               Stretch="Uniform"/>
+               Stretch="Uniform"
+               Height="60"/>
 
+        <!--In einer Textbox kann der User Strings eingeben. Mittels AcceptsReturn wird die Return-Taste für Zeilenumbrüche
+        freigegeben.-->
         <TextBox x:Name="Tbx_Input"
-                 Text="TEXT"
+                 Text="Hallo"
                  Height="60"
                  AcceptsReturn="True"
                  AcceptsTab="True"
-                 TextWrapping="WrapWithOverflow"/>
+                 TextWrapping="WrapWithOverflow"
+                 VerticalScrollBarVisibility="Visible">
+            <TextBox.ContextMenu>
+                <!--Die meisten Steuerelemente haben eine ContextMenu-Property, in welche ein ContextMenu eingepflegt werden kann (vgl. Menu).-->
+                <ContextMenu>
+                    <MenuItem Header="Kopieren"/>
+                    <MenuItem Header="Einfügen"/>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
 
+        <!--ItemControls wie ComboBoxen oder ListViews können über die ItemsSource-Property mit Daten 
+        oder in XAML mit Items mit Content-Property bestückt werden-->
         <ComboBox x:Name="Cbb_Auswahl"
                   IsEditable="True">
             <ComboBoxItem Content="Item1"/>
@@ -42,40 +62,54 @@
             <ComboBoxItem Content="Auswahl3"/>
         </ComboBox>
 
+        <!--Checkboxen sind visuelle Repräsentationen von boolschen Werten. Mittels IsThreeState kann eine Checkbox einen von DREI
+        unterschiedlichen Zuständen annehmen.-->
         <CheckBox x:Name="Cbx_Haken"
                   Content="Hak mich ab"
                   IsChecked="{x:Null}"/>
 
+        <!--RadioButtons können einer Group zugeordnet werden, wodurch nur einer der Buttons angewählt sein darf-->
         <RadioButton Content="Auswahl1" GroupName="Rbt_Group_1"/>
         <RadioButton Content="Auswahl2" GroupName="Rbt_Group_1"/>
         <RadioButton Content="Auswahl3" GroupName="Rbt_Group_2"/>
         <RadioButton Content="Auswahl4" GroupName="Rbt_Group_2"/>
 
+        <!--Mittels Slidern kann der User einen numerischen Wert im definierten Bereich auswählen. Die Ticks geben dabei Hilfestellung
+        und definieren die auswählbareb Zahlenwerte.-->
         <Slider x:Name="Sdr_Wert"
                 Minimum="0"
                 Maximum="100"
-                Value="40"
+                Value="30"
                 TickPlacement="BottomRight"
                 TickFrequency="10"
                 IsSnapToTickEnabled="True"/>
 
-        <ProgressBar Height="20"
-                     Value="60"
+        <!--Seperatoren sind visuelle Abgrenzungen-->
+        <Separator Margin="10"/>
+
+        <!--Mittels der ProgressBar können prozentuale Fortschritte visualisiert werden. Mit IsIndeterminate kann ein bewegender Balken
+        dargestellt werden.-->
+        <ProgressBar Minimum="0"
+                     Maximum="100"
+                     Height="10"
+                     Value="50"
                      IsIndeterminate="True"/>
 
+        <!--Menüs, wie ein Fenster-Menü (Menu) oder ein Kontext-Menü (ContextMenu) werden mit MenuItems befüllt.
+        Diese können ihrerseits weitere MenuItems aufnehmen, wodurch sich dann Untermenüs bilden-->
         <Menu>
             <MenuItem Header="Datei">
                 <MenuItem Header="Neu">
-                    <MenuItem Header="Neues Fenster"
-                              Click="Neu_Click"/>
-                    <MenuItem Header="Neues Dialog-Fenster"
-                              Click="Dialog_Click"/>
+                    <MenuItem Header="Neu" Click="OpenWindow"/>
+                    <MenuItem Header="Dialog" Click="OpenDialogWindow"/>
                 </MenuItem>
-                <MenuItem Header="Beenden"
-                          Click="Beenden_Click"/>
+                <MenuItem Header="Speichern"/>
+                <MenuItem Header="Schließen" Click="CloseWindow"/>
             </MenuItem>
+            <MenuItem Header="Hilfe"/>
         </Menu>
 
+        <!--Ribbons sind die 'neuen' MS-Menüs. Sie sind zu finden unter dem Namespace System.Windows.Controls.Ribbon-->
         <Ribbon>
             <Ribbon.ApplicationMenu>
                 <RibbonApplicationMenu>
@@ -84,11 +118,14 @@
             </Ribbon.ApplicationMenu>
 
             <RibbonTab Header="Ansicht">
-                <RibbonGroup Header="Liste">
+                <RibbonGroup Header="Listenansicht">
                     <RibbonCheckBox/>
+                    <RibbonComboBox/>
                     <RibbonButton/>
                 </RibbonGroup>
             </RibbonTab>
         </Ribbon>
+
     </StackPanel>
 </Window>
+
