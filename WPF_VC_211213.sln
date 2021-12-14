@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M01_Grundlagen", "HelloWPF\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M02_Controls", "Controls\M02_Controls.csproj", "{CA248847-6684-456A-8F2C-47A91B3A950F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{4051E549-6A94-451C-B20D-89C92BB1989F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab_Personendatenbank", "Personendatenbank\Lab_Personendatenbank.csproj", "{4051E549-6A94-451C-B20D-89C92BB1989F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M03_Container", "Container\M03_Container.csproj", "{8F7660CE-4F9B-46FC-ADEE-D3414504A875}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{9392D24F-D88F-4610-8674-B69CFB1D6482}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyBinding", "PropertyBinding\PropertyBinding.csproj", "{02CBAE34-FFCE-47CE-B774-DB156F7D1356}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_PropertyBinding", "PropertyBinding\M05_PropertyBinding.csproj", "{02CBAE34-FFCE-47CE-B774-DB156F7D1356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_ColorPicker", "ColorPicker\Lab_ColorPicker.csproj", "{FE439C30-F397-4B32-B6C3-E3E0562B2F8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{02CBAE34-FFCE-47CE-B774-DB156F7D1356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02CBAE34-FFCE-47CE-B774-DB156F7D1356}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02CBAE34-FFCE-47CE-B774-DB156F7D1356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE439C30-F397-4B32-B6C3-E3E0562B2F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE439C30-F397-4B32-B6C3-E3E0562B2F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE439C30-F397-4B32-B6C3-E3E0562B2F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE439C30-F397-4B32-B6C3-E3E0562B2F8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
