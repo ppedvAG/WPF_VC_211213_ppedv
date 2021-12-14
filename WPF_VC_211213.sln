@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab_ColorPicker", "ColorPic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06_DataBinding", "DataBinding\M06_DataBinding.csproj", "{D53A5B35-F733-4524-BF16-AFC69FA3637E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ressourcen", "Ressourcen\Ressourcen.csproj", "{AB7DD60A-2A57-4436-94D4-2088E9A82946}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M07_Ressourcen", "Ressourcen\M07_Ressourcen.csproj", "{AB7DD60A-2A57-4436-94D4-2088E9A82946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M08_Templates", "Templates\M08_Templates.csproj", "{0D0380FA-0668-4CDE-9C11-BC3FEC80BE59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{AB7DD60A-2A57-4436-94D4-2088E9A82946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB7DD60A-2A57-4436-94D4-2088E9A82946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB7DD60A-2A57-4436-94D4-2088E9A82946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0380FA-0668-4CDE-9C11-BC3FEC80BE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0380FA-0668-4CDE-9C11-BC3FEC80BE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0380FA-0668-4CDE-9C11-BC3FEC80BE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0380FA-0668-4CDE-9C11-BC3FEC80BE59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

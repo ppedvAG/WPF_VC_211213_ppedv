@@ -63,9 +63,9 @@ namespace Ressourcen {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Klick mich auch! ähnelt.
         /// </summary>
-        public static string buttonString {
+        public static string meinButtonString {
             get {
-                return ResourceManager.GetString("buttonString", resourceCulture);
+                return ResourceManager.GetString("meinButtonString", resourceCulture);
             }
         }
     }
