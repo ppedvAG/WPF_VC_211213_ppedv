@@ -8,4 +8,17 @@
     <RootNamespace>Personendatenbank</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="IntegerUpDown.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="IntegerUpDown.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

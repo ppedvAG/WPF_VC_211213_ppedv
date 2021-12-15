@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M09_Validation", "Validatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M10_Trigger", "Trigger\M10_Trigger.csproj", "{E27FB00B-2BB9-4269-AC21-6EC8AD152E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControls", "UserControls\UserControls.csproj", "{D3D950A6-4C48-4703-B188-EF9BF558816D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M11_UserControls", "UserControls\M11_UserControls.csproj", "{D3D950A6-4C48-4703-B188-EF9BF558816D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
