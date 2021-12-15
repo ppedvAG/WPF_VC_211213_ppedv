@@ -27,6 +27,8 @@ namespace Personendatenbank
 
         private void Btn_Ok_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show(Cbb_Lieblingsfarbe.SelectedValue.ToString());
+
             Person neuePerson = this.DataContext as Person;
 
             string ausgabe = neuePerson.Vorname + " " + neuePerson.Nachname + " (" + neuePerson.Geschlecht + ")\n" + neuePerson.Geburtsdatum.ToShortDateString() + "\n" + neuePerson.Lieblingsfarbe.ToString();
