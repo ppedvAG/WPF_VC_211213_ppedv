@@ -22,7 +22,7 @@
                             MethodName="GetType"
                             ObjectType="{x:Type sys:Type}">
             <ObjectDataProvider.MethodParameters>
-                <sys:String>System.Windows.Media.Colors, PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</sys:String>
+                <sys:String>System.Windows.Media.Colors, PresentationCore, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</sys:String>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
 
@@ -135,6 +135,7 @@
                     Content="OK"
                     Click="Btn_Ok_Click">
                 <Button.Style>
+                    
                     <Style TargetType="Button" BasedOn="{StaticResource Sty_Btn_Base}">
 
                         <Setter Property="IsEnabled" Value="False"/>
@@ -153,11 +154,14 @@
                             </MultiDataTrigger>
                         </Style.Triggers>
                     </Style>
+                    
                 </Button.Style>
             </Button>
+            
             <Button x:Name="Btn_Abbruch"
                     Content="Abbrechen"
                     Click="Btn_Abbruch_Click"/>
+            
         </WrapPanel>
     </Grid>
 </Window>    
