@@ -69,6 +69,11 @@
         <!--Mit der Property ValidatesOnDataErrors können durch bestimmte Interfaces direkt in der Datenklasse ValidierungsFälle definiert werden-->
         <TextBox Text="{Binding Alter, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"
                  Validation.ErrorTemplate="{StaticResource Ctp_Error_01}"/>
+
+        <TextBox x:Name="Tbx_IpInput_2"
+                 Validation.ErrorTemplate="{StaticResource Ctp_Error_02}"
+                 Text="{local:ValidationMarkup {Binding ElementName=Tbl_IpOutput_2, Path=Text, UpdateSourceTrigger=PropertyChanged}, {StaticResource validationRules}}"/>
+        <TextBlock x:Name="Tbl_IpOutput_2"/>
     </StackPanel>
 </Window>
 
