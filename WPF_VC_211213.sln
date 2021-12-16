@@ -23,11 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_Ressourcen", "Ressource
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M08_Templates", "Templates\M08_Templates.csproj", "{0D0380FA-0668-4CDE-9C11-BC3FEC80BE59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M09_Validation", "Validation\M09_Validation.csproj", "{6D0A2FC0-12D3-4457-BA64-9E25E22DCB1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M09_Validation", "Validation\M09_Validation.csproj", "{6D0A2FC0-12D3-4457-BA64-9E25E22DCB1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M10_Trigger", "Trigger\M10_Trigger.csproj", "{E27FB00B-2BB9-4269-AC21-6EC8AD152E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M10_Trigger", "Trigger\M10_Trigger.csproj", "{E27FB00B-2BB9-4269-AC21-6EC8AD152E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M11_UserControls", "UserControls\M11_UserControls.csproj", "{D3D950A6-4C48-4703-B188-EF9BF558816D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M11_UserControls", "UserControls\M11_UserControls.csproj", "{D3D950A6-4C48-4703-B188-EF9BF558816D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands", "Commands\Commands.csproj", "{79805D76-FA03-403D-93D1-57CE03C3E124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM.csproj", "{F4040D61-9501-421A-ABBA-8EC9931C5506}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{D3D950A6-4C48-4703-B188-EF9BF558816D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D950A6-4C48-4703-B188-EF9BF558816D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D950A6-4C48-4703-B188-EF9BF558816D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79805D76-FA03-403D-93D1-57CE03C3E124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79805D76-FA03-403D-93D1-57CE03C3E124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79805D76-FA03-403D-93D1-57CE03C3E124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79805D76-FA03-403D-93D1-57CE03C3E124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4040D61-9501-421A-ABBA-8EC9931C5506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4040D61-9501-421A-ABBA-8EC9931C5506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4040D61-9501-421A-ABBA-8EC9931C5506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4040D61-9501-421A-ABBA-8EC9931C5506}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
