@@ -43,8 +43,8 @@ namespace MVVM.ViewModel
                     //Exe:
                     p =>
                     {
-                        //Öffnen des nächsten Views und Zuweisung des ViewModels erfolgt in Lab_14
-
+                        //Öffnen des nächsten Views und Zuweisung des ViewModels
+                        new View.ListView().Show();
                         //Schließen dieses Fensters (welches über den CommandParameter übergeben wurde)
                         (p as Window).Close();
                     },
@@ -54,6 +54,6 @@ namespace MVVM.ViewModel
         }
 
         //Event, welches die GUI über Veränderungen informiert
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }
